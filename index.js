@@ -10,12 +10,17 @@ const createColor = () => {
   const red = generateColorValue();
   const green = generateColorValue();
   const blue = generateColorValue();
-  return `rgb(${red}, ${green}, ${blue})`
-}
+  return `rgb(${red}, ${green}, ${blue})`;
+};
 
-const applyColorToBody = () => {
-  const color = createColor;
-  document.body.style.backgroundColor = color;
-}
+const applyColorToBody = color => {
+  return (document.body.style.backgroundColor = color)
+  
+}; 
 
-console.log(applyColorToBody());
+const addRandomColorToBg = () => {
+  const color = createColor();
+  return applyColorToBody(color);
+}; 
+
+console.log(addRandomColorToBg());
