@@ -23,4 +23,8 @@ const addRandomColorToBg = () => {
   return applyColorToBody(color);
 }; 
 
-console.log(addRandomColorToBg());
+addRandomColorToBg();
+
+const newColors = document.getElementById(new-colors);
+
+newColors.onclick = () => addRandomColorToBg();
