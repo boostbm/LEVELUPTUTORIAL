@@ -28,3 +28,7 @@ addRandomColorToBg();
 const newColors = document.getElementById("new-colors");
 
 newColors.onclick = () => addRandomColorToBg();
+
+//const log = () => console.log("is in timeout");
+//setTimeout(log, 5000);
+setTimeout(addRandomColorToBg, 5000);
