@@ -32,3 +32,15 @@ newColors.onclick = () => addRandomColorToBg();
 //const log = () => console.log("is in timeout");
 //setTimeout(log, 5000);
 setTimeout(addRandomColorToBg, 5000);
+
+const chargeCard = () => new Promise ((resolve, reject) => {
+  if (true) {
+    return resolve(true);
+  }
+  return resolve(false);
+});
+
+const chargeCC = async (ccNUmber) => {
+  const res = await chargeCard(ccNumber);
+  console.log(res);
+}
