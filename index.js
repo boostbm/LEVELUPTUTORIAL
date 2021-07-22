@@ -90,7 +90,7 @@ const shoppingCart = [
 // console.log(simpleShoppingCart);
 // console.log(total);
 
-const total = simpleShoppingCart.reduce((total, currentPrice) {
+const total = simpleShoppingCart.reduce((total, currentPrice) => {
   return total = currentPrice;
 })
 
