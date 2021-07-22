@@ -81,10 +81,18 @@ const shoppingCart = [
 // .filter 
 
 
-const filteredCart = simpleShoppingCart.filter(value => {
-  return value.price <= 10; // if value is less or equal to 10, filter through.
-}); 
+// const filteredCart = simpleShoppingCart.filter(value => {
+//   return value.price <= 10; // if value is less or equal to 10, filter through.
+// }); 
 
+// const total = simpleShoppingCart.reduce()
+
+// console.log(simpleShoppingCart);
+// console.log(total);
+
+const total = simpleShoppingCart.reduce((total, currentPrice) {
+  return total = currentPrice;
+})
+
+console.log([...simpleShoppingCart].reverse());
 console.log(simpleShoppingCart);
-console.log(filteredCart);
-
