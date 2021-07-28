@@ -122,3 +122,17 @@ button.addEventListener("click", function() {
 // test.testFuncTwo();
 // team();
 // var test = new team();
+
+
+// FETCH
+
+const SEARCH_QUERY = 'Javascript';
+const API_URL = `http://openlibrary.org/search.json?q=${SEARCH_QUERYß}`
+
+fetch(API_URL)
+.then(res => {
+  console.log(res);
+})
+.catch(error => {
+  console.log(error)
+});
